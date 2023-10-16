@@ -1,11 +1,12 @@
-import logo from '../../logo.svg';
-import './App.css';
+import styles from './App.module.css';
 import Business from '../Business/Business';
+import SearchBar from '../SearchBar/SearchBar';
 
 function App() {
   return (
-    <div className="App">
-      <Business />
+    <div className={styles.App}>
+      <h1>Ravenous</h1>
+      <SearchBar />
     </div>
   );
 }
