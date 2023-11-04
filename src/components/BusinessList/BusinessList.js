@@ -1,19 +1,15 @@
 import React from "react";
 import styles from "./BusinessList.module.css";
-
 import Business from "../Business/Business";
 
-const BusinessList = () => {
+const BusinessList = (props) => {
     return (
       <div className={styles.BusinessList}>
-        <Business />
-        <Business />
-        <Business />
-        <Business />
-        <Business />
-        <Business />
-        <Business />
-        <Business />
+        {
+          props.BusinessList.map( business =>
+            <Business businessObject={business}/>
+          )
+        }
       </div>
     );
   };

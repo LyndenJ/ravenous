@@ -1,20 +1,21 @@
 import React from "react";
 import styles from "./Business.module.css";
 
-const business = {
-  src: "https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg",
-  alt: "Pizza Image",
-  name: "MarginOtto Pizzeria",
-  address: "123 Main Street",
-  city: "Philadelphia",
-  state: "PA",
-  zipCode: "19147",
-  category: "Italian",
-  rating: 4.5,
-  reviewCount: 90,
-};
+// const business = {
+//   src: "https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg",
+//   alt: "Pizza Image",
+//   name: "MarginOtto Pizzeria",
+//   address: "123 Main Street",
+//   city: "Philadelphia",
+//   state: "PA",
+//   zipCode: "19147",
+//   category: "Italian",
+//   rating: 4.5,
+//   reviewCount: 90,
+// };
 
-const Business = () => {
+const Business = (props) => {
+  const business = props.businessObject;
   return (
     <div className={styles.Business}>
       <div className={styles.imageContainer}>
